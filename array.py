@@ -33,8 +33,8 @@ def predict_seq2(a):
 
 ### 将数组中不为0的元素替换为0
 a=[18,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
-print(qselect(a,10))
+print(qselect(a,10))##[9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
 b=qselect(a,10)
-print(predict_seq1(a,b))
+print(predict_seq1(a,b))##[1, 2, 3, 4, 5, 6, 7, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 c=predict_seq1(a,b)
-print(predict_seq2(c))
+print(predict_seq2(c))##[1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]
